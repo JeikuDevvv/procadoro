@@ -2,6 +2,11 @@
 
 import React from "react";
 import SecondaryButton from "../buttons/SecondaryButton";
+import {
+    PomodoroState,
+    ShortBreakState,
+    LongBreakState,
+} from "@/function/pomodoro";
 
 function States() {
     return (
@@ -9,17 +14,17 @@ function States() {
             <div className="space-x-1">
                 <SecondaryButton
                     text="pomodoro"
-                    onClick={() => console.log("pomodoro")}
+                    onClick={PomodoroState}
                     styles=""
                 />
                 <SecondaryButton
                     text="short break"
-                    onClick={() => console.log("short")}
+                    onClick={ShortBreakState}
                     styles=""
                 />
                 <SecondaryButton
                     text="long break"
-                    onClick={() => console.log("long")}
+                    onClick={LongBreakState}
                     styles=""
                 />
             </div>
