@@ -8,12 +8,11 @@ interface ButtonProps {
 
 const PrimaryButton: React.FC<ButtonProps> = ({ text, styles, onClick }) => {
     return (
-        <button onClick={onClick}>
-            <div
-                className={`items-center justify-center space-x-1 bg-customColor10 rounded-md p-1 shadow-md flex md:flex-initial cursor-pointer text-white font-normal font-poppins`}
-            >
-                <p className={`text-xs ${styles}`}>{text}</p>
-            </div>
+        <button
+            onClick={onClick}
+            className={`${styles} bg-customColor10 hover:bg-customColor30/10 text-white font-semibold hover:text-white border border-customColor10 hover:border-transparent rounded`}
+        >
+            {text}
         </button>
     );
 };

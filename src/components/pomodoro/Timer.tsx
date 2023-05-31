@@ -1,7 +1,12 @@
 import React from "react";
+import { Pomodoro } from "@/function/pomodoro";
 
-function Timer() {
-    return <div className="text-[100px] text-customColor10 ">25:00</div>;
+interface TimerProps {
+    text: string;
 }
+
+const Timer: React.FC<TimerProps> = ({ text }) => {
+    return <h1 className="text-[100px] text-customColor10 ">{text}</h1>;
+};
 
 export default Timer;

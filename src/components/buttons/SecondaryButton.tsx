@@ -8,12 +8,11 @@ interface ButtonProps {
 
 const SecondaryButton: React.FC<ButtonProps> = ({ text, styles, onClick }) => {
     return (
-        <button onClick={onClick}>
-            <div
-                className={`items-center justify-center space-x-1 bg-customColor30/25 rounded-md p-1 shadow-md flex md:flex-initial cursor-pointer text-white font-normal font-poppins`}
-            >
-                <p className={`text-xs ${styles}`}>{text}</p>
-            </div>
+        <button
+            onClick={onClick}
+            className="bg-transparent text-customColor10 font-semibold py-2 px-4 border border-customColor10 rounded"
+        >
+            {text}
         </button>
     );
 };

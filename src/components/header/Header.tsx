@@ -15,7 +15,7 @@ function Header() {
                     <PrimaryButton
                         text="Settings"
                         onClick={() => console.log("Settings Open!")}
-                        styles=""
+                        styles="font-poppins text-[12px] px-1"
                     />
                     <Avatar name="jeiku dev" round size="25" />
                 </div>
