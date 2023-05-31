@@ -8,13 +8,14 @@ function Header() {
     return (
         <header>
             <div className="flex md:flex-row items-center space-x-1 bg-transparent rounded-b-2xl">
-                <p className="text-xl font-poppins font-semibold tracking-wide p-5 text-customColor10">
+                <p className="text-xl font-poppins font-semibold tracking-wide p-5 text-customColor10 lg:ml-[550px]">
                     procadoro.
                 </p>
-                <div className="flex item-center space-x-2 flex-1 justify-end p-5">
+                <div className="flex item-center space-x-2 flex-1 justify-end p-5 lg:justify-center">
                     <PrimaryButton
                         text="Settings"
                         onClick={() => console.log("Settings Open!")}
+                        styles=""
                     />
                     <Avatar name="jeiku dev" round size="25" />
                 </div>

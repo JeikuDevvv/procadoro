@@ -6,7 +6,7 @@ export default function Home() {
         <main>
             <Header />
             {/* BODY */}
-            <Pomodoro />
+            <Pomodoro styles="lg:flex justify-center w-full" />
         </main>
     );
 }

@@ -1,12 +1,7 @@
-import Countdown from "@/function/pomodoro";
 import React from "react";
 
 function Timer() {
-    return (
-        <div>
-            <Countdown />
-        </div>
-    );
+    return <div className="text-[100px] text-customColor10">25:00</div>;
 }
 
 export default Timer;
