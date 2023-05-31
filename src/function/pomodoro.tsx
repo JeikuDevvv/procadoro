@@ -44,9 +44,9 @@ export const Pomodoro: React.FC<PomodoroProps> = ({ styles }) => {
         setIsBreak(true);
 
         if (!isBreak) {
-            setTimeRemaining(300); // 300 seconds = 5 minutes for short break
+            setTimeRemaining(300);
         } else {
-            setTimeRemaining(1500); // 1500 seconds = 25 minutes for next pomodoro session
+            setTimeRemaining(1500);
             setIsBreak(false);
         }
     };
