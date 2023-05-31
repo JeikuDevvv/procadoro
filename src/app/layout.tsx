@@ -12,7 +12,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body className="bg-customColor60">{children}</body>
+            <body className="bg-customColor60 font-poppins">{children}</body>
         </html>
     );
 }

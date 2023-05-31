@@ -1,11 +1,11 @@
 import React from "react";
-import Buttons from "@/components/pomodoro/buttons";
-import States from "@/components/pomodoro/states";
-import Timer from "@/components/pomodoro/timer";
+import Buttons from "./Buttons";
+import States from "./States";
+import Timer from "./Timer";
 
 function Pomodoro() {
     return (
-        <div>
+        <div className="flex flex-col items-center bg-customColor30/5 p-10">
             <States />
             <Timer />
             <Buttons />
