@@ -26,6 +26,7 @@ export const Pomodoro: React.FC<PomodoroProps> = ({ styles }) => {
         }
 
         return () => clearInterval(interval);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [isRunning, timeRemaining]);
 
     const handleToggle = () => {
